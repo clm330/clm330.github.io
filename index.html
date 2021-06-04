@@ -1,1 +1,124 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-light.min.css" />
+  <link rel="stylesheet" href="https://cdn.bootcss.com/github-markdown-css/2.8.0/github-markdown.min.css" />
+  <title>Marked In HTML</title>
+</head>
+<body>
+  <template type="markdown">
+	## 工作：
+	#### 云服务：
+	+ 交接内容：
+		-  公司 ECS ，用于 FRP 反向代理，需移交 ECS 与 ssh key，需学会设置开放端口
+		-  公司域名（未交接）
+	
+	#### 网络：
+	+ 交接内容：
+		- 办公网络，需更换公司的上网帐号（未更换）
+		- TP300D 选择 AP 设置方法（已撰写，已上传云文档）
+		- TP300D 切换 AP 设置方法（已撰写，已上传云文档）
+	
+	#### 电路与嵌入式系统
+	+ 交接内容：
+		- AMR电路图（米海可提供）
+		- 叉车电路图（韩总已画）
+		- 嵌入式程序（未交接）
+	+ 建议：
+		- stm32 只上发防撞条是否触发，去除上位机修复前一直上发触发的功能
+		- 叉车：叉臂上升到位后，停止上升的动作由电路自行完成，不再由嵌入式控制
+		- 叉车：防撞条或急停触发后，由 stm32 的一个管脚输出禁止使能信号或者由韩总的电路实现
+	+ 未完成：
+		- AGV按下急停时，顶升上升
+		- 叉车版支持在线升级
+	
+	#### 所有机器人的相关信息：
+	+ 交接内容：
+		- 在 cyanine-os/zdummy/dummy_doc/frp.xlsx 里面。由于出售的机器人形态可能由AMR变成叉车，或者从米海出售至其他地方，需及时更新信息
+	
+	#### 伺服电机相关：
+	+ 交接内容：
+		- CANOpen 报文理解
+		- 和利时使用485配置驱动
+		- 德马克使用串口配置驱动
+		- 使用 CANOpen yaml 或 eds 配置驱动寄存器
+		- CANOpen 部分修改代码理解
+		- 解析报文并发布 topic 的程序
+	
+	#### 节点管理相关：
+	+  交接内容：
+		- 开机启动模块（该模块包括获取机器人 IP ，切换 AP ，切换网络自动重启 ROS 和自动配置 .bashrc ，配置环境变量，根据环境变量选择相对应程序包入口，删除过期日志）
+		- 节点管理模块（进入退出模式，节点监控）
+	
+	#### 摄像头相关：
+	+ 交接内容：
+		- 深度摄像头 FOV 标定（已在 launch 文件里面添加所有参数详细说明）
+		- realsense-ros 代码内置设置参数
+		- 点云滤波（已在 launch 文件里面添加所有参数详细说明）
+		- 记忆障碍物功能（已在 launch 文件里面添加所有参数详细说明）
+	
+	#### 标定模块：
+	+ 交接内容：
+		- 设置序列号
+		- 标定雷达
+		- 标定陀螺仪（不准）
+		- 标定速度（有bug）
+		- 写入 yaml 模块
+	
+	#### 建图相关：
+	+ 交接内容：
+		- 获取 /map 生成前端用的 jpg
+		- 获取机器人相对于 map 的位置信息，前端需要
+	
+	#### 修复错误模块：
+	+ 交接内容：
+		- 清除系统错误
+	
+	#### 专利撰写：
+	+ 交接内容：
+		- 记忆立体空间障碍物
+		- 去除立体点云中的地面部分
+	
+	
+  </template>
+</body>
+<script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js" charset="utf-8"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js" charset="utf-8"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/javascript.min.js" charset="utf-8"></script>
+<script src="md_html.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  markedInHtml.init()
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
