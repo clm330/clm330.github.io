@@ -19,79 +19,154 @@
 	
 #### 网络：
 + 交接内容：
-	- [ ] 办公网络，需更换公司的上网帐号（未更换，已写更换帐号步骤）
-	- [x] TP300D 选择 AP 设置方法（已撰写，已上传）
-	- [x] TP300D 切换 AP 设置方法（已撰写，已上传）
-	- [x] TP300D 静态 IP 设置方法（已撰写，已上传）
-	- [x] 服务器 frp 配置（已撰写，已上传）
-	- [x] 机器人 frp 配置（已撰写，已上传）
-	- [x] 阿里云 frp 服务器开放端口教程（已撰写，已上传）
-	- [x] 办公 fq 账户更换教程（已撰写，已上传）
-	- [x] 办公网络环境简单排查（已撰写，已上传）
-	- [x] 客户网络拓扑图（已撰写，已上传）
+	- [ ] 办公网络，需更换公司的上网帐号（未更换）
+	- [x] TP300D 选择 AP 设置方法
+		- 位于 开发文档/交接文档/网络配置/机器人网络/配置无线网络.docx
+	- [x] TP300D 切换 AP 设置方法
+		- 位于 开发文档/交接文档/网络配置/机器人网络/切换AP网络配置.docx
+	- [x] TP300D 静态 IP 设置方法
+		- 位于 开发文档/交接文档/网络配置/机器人网络/300D配置静态IP.docx
+	- [x] 服务器 frp 配置
+		- 位于 开发文档/交接文档/网络配置/反向代理/反向代理服务器配置.docx
+	- [x] 机器人 frp 配置
+		- 位于 开发文档/交接文档/网络配置/反向代理/反向代理机器人配置.docx
+	- [x] 阿里云 frp 服务器开放端口教程
+		- 位于 开发文档/交接文档/网络配置/反向代理/反向代理服务器配置.docx
+	- [x] 办公 fq 账户更换教程
+		- 位于 开发文档/交接文档/网络配置/办公网络/办公fq.docx
+	- [x] 办公网络环境简单排查
+		- 位于 开发文档/交接文档/网络配置/办公网络/办公fq环境简单排查.docx
+	- [x] 客户网络拓扑图
+		- 位于 开发文档/交接文档/网络配置/机器人网络/客户网络拓扑图/客户网络拓扑图
 	
 #### 电路与嵌入式系统
 + 交接内容：
-	- [x] AMR 电路图（韩总已画，已上传）
-	- [x] 叉车电路图（韩总已画，已上传）
-	- [x] AMR 代码公司库（未写注释）
-	- [x] 叉车 代码公司库（已写注释）
+	- [x] AMR 电路图（韩总已画）
+		- 位于 开发文档/电路图/AMR.pdf
+	- [x] 叉车电路图（韩总已画）
+		- 位于 开发文档/电路图/叉车.pdf
+	- [x] AMR 代码公司库
+		- [x] 已写注释
+		- 位于 cyanine-embedded 的 code_comment 分支
+	- [x] 叉车 代码公司库
+		- [x] 已写注释
+		- 位于 embedded_forklift 的 code_comment 分支
 	
 #### 所有机器人的相关信息：
 + 交接内容：
-	- [x] 在 cyanine-os/zdummy/dummy_doc/frp.xlsx 里面。由于出售的机器人形态可能由AMR变成叉车，或者从米海出售至其他地方，需及时更新信息
+	- [x] 在 cyanine-os/zdummy/dummy_doc/frp.xlsx 里面
+		- 注意：由于出售的机器人形态可能由AMR变成叉车，或者从米海出售至其他地方，需及时更新信息
 	
 #### 伺服电机相关：
 + 交接内容：
-	- [ ] CANOpen 报文理解
-	- [x] 和利时使用 485 配置驱动（教程文档已经上传，实在不懂，可咨询和利时技术）
-	- [x] 德马克使用串口配置驱动（教程文档已经上传，交接文档有步骤，实在不懂，可咨询德马克技术）
-	- [ ] 使用 CANOpen yaml 或 eds 配置驱动寄存器（理解这些配置的基础是要懂 CANOpen 协议）
-	- [ ] CANOpen 部分修改代码理解（修改的部分都是因为要兼容和利时的非标准协议引起的，德马克的无需修改。理解这些代码的基础是要懂 CANOpen 协议）
-	- [x] 解析报文并发布 topic 的程序（已写注释，代码位于 cyanine-os_tool/CAN_CANOPEN）
+	- [ ] CANOpen 报文理解 	
+		- 位于 /开发文档/交接文档/伺服驱动相关/必须要懂的文档
+	- [x] 和利时使用 485 配置驱动
+		- 教程文档已经上传，实在不懂，可咨询和利时技术。
+		- 位于 /开发文档/交接文档/伺服驱动相关/和利时/HS及LS伺服通讯软件及使用说明/SYNTRON1/通讯软件使用说明.pdf
+	- [x] 德马克使用串口配置驱动
+		- 教程文档已经上传，交接文档有步骤，实在不懂，可咨询德马克技术。
+		- /开发文档/交接文档/伺服驱动相关/德马克/DC-低压伺服驱动2019.zip
+	- [ ] 使用 CANOpen yaml 或 eds 配置驱动寄存器
+		- 理解这些配置的基础是要懂 CANOpen 协议
+	- [ ] CANOpen 部分修改代码理解
+		- 修改的部分都是因为要兼容和利时的非标准协议引起的，德马克的无需修改。
+		- 理解这些代码的基础是要懂 CANOpen 协议
+	- [x] 解析报文并发布 topic 的程序分支是 feature/0.0.7_code_comment
+		- [x] 已写注释
+		- 电机状态和电池电量位于 cyanine-os_tool/CAN_CANOPEN/socket_can_battery
+		- 德马克 limit 错误发布和电流大小发布位于 cyanine-os_tool/CAN_CANOPEN/socket_can_current
+		- 位于 cyanine-os_tool 的 feature/0.0.7_code_comment 分支
 	
 #### 节点管理相关：
 +  交接内容：
-	- [x] 开机启动模块（已写注释，在 cyanine-os 的 feature/0.0.7_code_comment 分支，该模块包括获取机器人 IP，切换 AP，切换网络自动重启 ROS 和自动配置 .bashrc ，配置环境变量，根据环境变量选择相对应程序包入口，删除过期日志）
-	- [x] 节点管理模块（已写注释，在 cyanine-os 的 feature/0.0.7_code_comment 分支，进入退出模式，节点监控）
+	- [x] 开机启动模块
+		- 功能包括：获取机器人 IP，切换 AP，切换网络自动重启 ROS 和自动配置 .bashrc ，配置环境变量，根据环境变量选择相对应程序包入口，删除过期日志
+		- [x] 已写注释
+		- 位于 cyanine-os/node_supervisor/scripts/start_up_for_ct_agv_01.py
+		- 位于 cyanine-os 的 feature/0.0.7_code_comment 分支
+	- [x] 节点管理模块
+		- 功能包括：进入退出模式，节点监控
+		- [x] 已写注释
+		- 位于 cyanine-os/node_supervisor
+		- 位于 cyanine-os 的 feature/0.0.7_code_comment 分支
 	
 #### 摄像头相关：
 + 交接内容：
-	- [x] 深度摄像头 FOV 标定（已写注释，已在 launch 文件里面添加所有参数详细说明）
-	- [x] realsense-ros 代码内置设置参数（不建议使用，建议使用 交接文档 - 摄像头相关 - 写入摄像头动态配置参数的办法）
-	- [x] 编写 realsense 摄像头外置 json 功能(已撰写，已上传)
-	- [x] 点云滤波（已在 launch 文件里面添加所有参数详细说明）
-	- [x] 记忆障碍物功能（已写注释，已在 launch 文件里面添加所有参数详细说明）
-	- [x] 以上注释在 ct_3d_obstacle_mem 的 feature/0.0.3_code_comment
+	- [x] 深度摄像头 FOV 标定
+		- [x] 已写注释
+		- 位于 ct_3d_obstacle_mem
+		- 位于 ct_3d_obstacle_mem 的 feature/0.0.3_code_comment 分支
+		- 已在 launch 文件里面添加所有参数详细说明
+	- [x] realsense-ros 代码内置设置参数
+		- 不建议使用，建议使用 /交接文档/摄像头相关/写入摄像头动态配置参数的办法.docx
+	- [x] 编写 realsense 摄像头外置 json 功能
+		- 位于 /交接文档/摄像头相关/写入摄像头动态配置参数的办法.docx
+	- [x] 点云滤波
+		- [x] 已写注释
+		- 位于 cyanine-os_tool/pointcloud_filter 
+		- 位于 feature/0.0.7_code_comment 分支
+		- 已在 launch 文件里面添加所有参数详细说明
+	- [x] 记忆障碍物功能
+		-[x] 已写注释
+		- 位于 ct_3d_obstacle_mem
+		- 位于 ct_3d_obstacle_mem 的 feature/0.0.3_code_comment 分支
+		- 已在 launch 文件里面添加所有参数详细说明
 
 #### 标定模块：
 + 交接内容：
-	- [x] 设置序列号（已写注释）
-	- [x] 标定雷达（已写注释）
+	- [x] 设置摄像头序列号
+		- [x] 已写注释
+		- 位于 cyanine-os_tool/calibration/set_camera_sn
+		- 位于 cyanine-os_tool 的 feature/0.0.7_code_comment 分支
+	- [x] 标定雷达
+		- [x] 已写注释
+		- 位于 cyanine-os_tool/calibration/lidar_calibration
+		- 位于  cyanine-os_tool 的 feature/0.0.7_code_comment 分支
 	- [ ] 标定陀螺仪（不准，不建议使用。可能需要换一种标定方式）
 	- [ ] 标定速度（有 bug ，但伺服电机很准，不用标定也可以？）
-	- [x] 写入 yaml 模块（已写注释）
+	- [x] 写入 yaml 模块
+		- [x] 已写注释
+		- 位于 cyanine-os_tool/yaml_editor 
+		- 位于 cyanine-os_tool 的 feature/0.0.7_code_comment 分支
 	
 #### 建图相关：
 + 交接内容：
-	- [x] 获取 /map 生成前端用的 jpg （位于 cyanine-os/server/map_update，已写注释，在 cyanine-os 的 feature/0.0.7_code_comment）
-	- [x] 建图时获取机器人相对于 map 的位置信息，前端需要 (位于 cyanine-os_tool/get_tf，这个太简单了，不需要写注释就能看懂)
+	- [x] 获取 /map 生成前端用的 jpg
+		- [x] 已写注释
+		- 位于 cyanine-os/server/map_update
+		- 位于 cyanine-os 的 feature/0.0.7_code_comment 分支
+	- [ ] 建图时获取机器人相对于 map 的位置信息，前端需要
+		- [ ] 已写注释，这个太简单了，不需要写注释就能看懂
+		- 位于 cyanine-os_tool/get_tf
 	
 #### 修复错误模块：
 + 交接内容：
-	- [x] 清除统一错误（已写注释）
-	- [x] 修复错误配置文档（已撰写，已上传）
+	- [x] 清除统一错误
+		- [x] 已写注释
+		- 位于 cyanine-os_tool/ct_clear_error
+		- 位于 cyanine-os_tool 的 feature/0.0.7_code_comment 分支
+	- [x] 修复错误配置文档
+		- 位于 /交接文档/统一信息相关/修复错误配置步骤.docx
 
 #### 防拷贝模块：
 + 交接内容：
-	- [x] 加密（已写注释，代码比较简单）
-	- [x] 解密（已写注释）
-		
+	- [x] 加密
+		- [x] 已写注释
+		- 位于 cyanine-os/test_encrypt/scripts/set.py
+		- 位于 cyanine-os 的 feature/0.0.7_code_comment 分支
+	- [x] 校验
+		- [x] 已写注释
+		- 位于 cyanine-os/test_encrypt
+		- 位于 cyanine-os 的 feature/0.0.7_code_comment 分支	
+
 #### 专利撰写：
 + 交接内容：
 	- [x] 记忆立体空间障碍物
+		- 位于 /交接文档/专利/一种使用两个立体摄像头进行分布式记忆障碍物的方法.doc
 	- [x] 去除立体点云中的地面部分
-		
+		- 位于 /交接文档/专利/一种通过线性拟合去除点云中地面的方法.doc
+
 #### 其他：
 + 废弃方案：
 	- [x] DWA 定位（精度和距离问题，废弃）
